@@ -1,0 +1,205 @@
+.container{
+    display: grid;
+    grid-template: repeat(3,33fr) / repeat(3,33fr);
+    grid-template-areas: "sidebar header header"
+    "sidebar gallery gallery"
+    "sidebar gallery gallery"
+;
+    height: 100vh;
+}
+*{
+    font-family: 'Adobe Clean', sans-serif;
+}
+
+.sidebar{
+    padding-left:2rem;
+    padding-bottom: 1rem;
+    grid-area: sidebar;
+
+}
+.header{
+    grid-area: header;
+    background-color: #f7f8fa;
+}
+.gallery{
+    gap: 5px;
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-area: gallery;
+    grid-template: repeat(2,50fr) / repeat(2,50fr);
+}
+h4{
+    color: gray;
+    font-family: "Adobe Clean",sans-serif;
+}
+h1{
+
+    border: 0;
+    margin-top: 1.5rem;
+    font-family: "Adobe Clean",sans-serif;
+}
+.btn-3,.btn-1,.btn-2{
+    background-color: lightgray;
+    border-radius: 10px;
+   border: 0;
+}
+.btn-2:hover,.btn-3:hover,.btn-1:hover{
+    background-color: gray;
+}
+h5{
+    color: gray;
+    text-align: center;
+    font-family: "Adobe Clean",sans-serif;
+}
+.h3-header{
+    font-family: "Adobe Clean",sans-serif;
+    margin-top:3rem ;
+}
+.image-main{
+    width: 100%;
+    height: 100%;
+}
+.image-main:hover{
+    color: orange;
+}
+.responsive{
+    display: none;
+}
+.sidebar-responsive{
+    display: none;
+}
+.contact-btn-responsive{
+    display: none;
+}
+@media  screen and (max-width: 700px) {
+    * {
+        font-family: "Adobe Clean", sans-serif;
+    }
+
+    .h1 {
+        display: none;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template: repeat(4, 33fr) / repeat(1, 33fr);
+        grid-template-areas: "sidebar"
+    "header"
+    "gallery"
+        "contact";
+        height: 100vh;
+    }
+
+    .sidebar-responsive {
+        display: grid;
+        grid-area: sidebar;
+        grid-template: repeat(1, 33fr)/repeat(2, 33fr);
+        grid-template-areas: "h1"
+                              "navbar";
+    }
+
+    .gallery {
+        gap: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: grid;
+        align-items: stretch;
+        justify-items: stretch;
+        grid-area: gallery;
+        grid-template: repeat(1, 50fr) / repeat(1, 50fr);
+    }
+
+    .h1-responsive {
+        display: grid;
+        grid-area: h1;
+        font-size: 1rem;
+    }
+
+    .navbar {
+        display: grid;
+        grid-area: navbar;
+        padding-left: 27rem;
+    }
+    .title{
+        font-family: "Adobe Clean",sans-serif;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .h3-header{
+        width: 40ch;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        color: #818181;
+        font-size: 1rem;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    body {
+        font-family: "Adobe Clean", sans-serif;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        font-family: "Adobe Clean";
+        padding: 8px;
+        line-height: 3rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #040326;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .overlay {
+            overflow-y: auto;
+        }
+
+        .overlay a {
+            font-size: 20px
+        }
+
+        .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+    }
+}
+
+

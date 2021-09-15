@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid layout</title>
+    <link href="http://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="container">
+   <div class="sidebar-responsive">
+
+       <span class="title">Rose Van Der Ende</span>   <span class="navbar" style="font-size:30px;cursor:pointer;float: right" onclick="openNav()">&#9776;</span>
+
+
+       <div id="myNav" class="overlay">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <div class="overlay-content">
+               <h3>Work</h3>
+               <a href="#">Lorem & Lorem-Book Design</a>
+               <a href="#">Logos & Marks-Logofoilo</a>
+               <a href="#">The Merry Moore-Branding</a>
+               <a href="#">Aliza Levi Interiors-Branding</a>
+               <a href="#">Masterly-The Dutch in Milano</a>
+               <a href="#">Louie Coffee-Branding</a>
+
+               <h3>Contact</h3>
+               <hr>
+               <button class="btn-1">
+                   <span class="iconify" data-icon="cib:telegram-plane" style="color: black;" data-width="22"></span>
+               </button>
+               <button class="btn-2">
+                   <span class="iconify" data-icon="bx:bxl-linkedin" style="color: black;" data-width="22"></span>
+               </button>
+               <button class="btn-3">
+                   <span class="iconify" data-icon="bx:bxl-instagram" style="color: black;" data-width="22"></span>
+               </button>
+           </div>
+       </div>
+
+   </div>
+    <div class="sidebar">
+        <h1>Rose Van der Ende</h1>
+        <h3>Work</h3>
+        <h4 >Lorem & Lorem-Book Design</h4>
+        <h4 >Logos & Marks-Logofoilo</h4>
+        <h4 >The Merry Moore-Branding</h4>
+        <h4 >Aliza Levi Interiors-Branding</h4>
+        <h4 >Masterly-The Dutch in Milano</h4>
+        <h4 >Louie Coffee-Branding</h4>
+        <h4 >Dogwood-Branding</h4>
+        <h4 >Loavles Newsletter Design</h4>
+        <h3>Contact</h3>
+        <button class="btn-1">
+            <span class="iconify" data-icon="cib:telegram-plane" style="color: black;" data-width="22"></span>
+        </button>
+        <button class="btn-2">
+            <span class="iconify" data-icon="bx:bxl-linkedin" style="color: black;" data-width="22"></span>
+        </button>
+        <button class="btn-3">
+            <span class="iconify" data-icon="bx:bxl-instagram" style="color: black;" data-width="22"></span>
+        </button>
+    </div>
+    <div class="header">
+        <h3 class ="h3-header" style="text-align: center;">My name is maryam rezayee and I'm a passionate graphic designer.Within my<br>
+            design I value simplicitym, symmetry and detail.Whether I'm designing books,<br>
+            branding,packaging or website I always strive for beauty and balance.
+        </h3>
+        <h5>Scroll down to see my work</h5>
+    </div>
+    <div class="gallery">
+        <div >
+          <img style="gap: 5px" class="image-main" src="assets/images/image1.jpg" alt="nothing" >
+        </div>
+        <div>
+            <img  style="gap: 5px" class="image-main" src="assets/images/image2.jpg" alt="nothing">
+        </div>
+        <div >
+            <img style="gap: 5px" class="image-main" src="assets/images/image4.jpg" alt="nothing">
+        </div>
+        <div >
+            <img style="gap: 5px" class="image-main" src="assets/images/image3.jpg" alt="nothing">
+        </div>
+
+    </div>
+    <div class="contact-btn-responsive">
+        <span class="iconify" data-icon="cib:telegram-plane" style="color: black;" data-width="22"></span>
+        <span class="iconify" data-icon="bx:bxl-linkedin" style="color: black;" data-width="22"></span>
+        <span class="iconify" data-icon="bx:bxl-instagram" style="color: black;" data-width="22"></span>
+    </div>
+<!--        <button class="contact-btn-responsive">-->
+<!--            -->
+<!--        </button>-->
+<!--        <button class="contact-btn-responsive">-->
+<!--            <span class="iconify" data-icon="bx:bxl-linkedin" style="color: black;" data-width="22"></span>-->
+<!--        </button>-->
+<!--        <button class="contact-btn-responsive">-->
+<!--            <span class="iconify" data-icon="bx:bxl-instagram" style="color: black;" data-width="22"></span>-->
+<!--        </button>-->
+
+
+</div>
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+</body>
+</html>
